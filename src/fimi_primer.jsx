@@ -1252,7 +1252,11 @@ export default function FIMIPrimer() {
             <h1 className="text-xl font-bold text-slate-100" style={{ fontFamily: "'Sixtyfour', Georgia, serif" }}>
               FIMI, Hybrid Warfare & Information Integrity
             </h1>
-            <p className="text-slate-500 text-xs mt-1 font-mono">March 2026 · Sources: EEAS 4th Report, NATO StratCom, Academic Literature</p>
+            <p className="text-slate-500 text-xs mt-1 font-mono">
+              March 2026 · Sources: EEAS 4th Report, NATO StratCom, Academic Literature · AI disclosure: Compiled and created using Claude Code and Visual Studio · 
+              <a href="https://www.linkedin.com/in/jhnnsmyr/" target="_blank" rel="noopener noreferrer" className="text-amber-400 hover:text-amber-300">LinkedIn</a> · 
+              <a href="https://github.com/pagancrew" target="_blank" rel="noopener noreferrer" className="text-amber-400 hover:text-amber-300">GitHub</a>
+            </p>
           </div>
           <div className="flex gap-2 flex-wrap justify-end">
             <Tag color="red">Russia</Tag>
