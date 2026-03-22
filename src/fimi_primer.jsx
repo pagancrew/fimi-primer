@@ -37,7 +37,7 @@ const SectionHeader = ({ number, title, subtitle }) => (
   <div className="mb-10 pb-6 border-b border-slate-700">
     <div className="text-slate-500 font-mono text-sm mb-1">{number}</div>
     <h2 className="text-3xl font-bold text-slate-100 tracking-tight mb-2"
-        style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+        style={{ fontFamily: "'Sixtyfour', Georgia, serif" }}>
       {title}
     </h2>
     {subtitle && <p className="text-slate-400 text-base leading-relaxed">{subtitle}</p>}
@@ -87,7 +87,7 @@ const ActorCard = ({ name, type, flag, methods, notable, label }) => (
     <div className="flex items-start justify-between mb-3">
       <div>
         <span className="text-slate-500 text-xs font-mono mr-2">{flag}</span>
-        <span className="text-slate-100 font-bold text-lg" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>{name}</span>
+        <span className="text-slate-100 font-bold text-lg" style={{ fontFamily: "'Sixtyfour', Georgia, serif" }}>{name}</span>
       </div>
       <Tag color={label}>{type}</Tag>
     </div>
@@ -155,7 +155,7 @@ export default function FIMIPrimer() {
           The vocabulary of information warfare is contested, evolving, and strategically consequential. Getting definitions right is not pedantry — different terms carry different policy implications, legal thresholds, and attribution standards. The shift from "disinformation" to "FIMI" in EU discourse represents a deliberate conceptual upgrade driven by operational necessity.
         </p>
 
-        <h3 className="text-lg font-bold text-amber-400 mb-4" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>Core Definitions</h3>
+        <h3 className="text-lg font-bold text-amber-400 mb-4" style={{ fontFamily: "'Sixtyfour', Georgia, serif" }}>Core Definitions</h3>
 
         <TermBox
           term="FIMI — Foreign Information Manipulation and Interference"
@@ -208,7 +208,7 @@ export default function FIMIPrimer() {
           source="DISARM Foundation; disarmframework.com"
         />
 
-        <h3 className="text-lg font-bold text-amber-400 mb-4 mt-8" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>Why "FIMI" Over "Disinformation"?</h3>
+        <h3 className="text-lg font-bold text-amber-400 mb-4 mt-8" style={{ fontFamily: "'Sixtyfour', Georgia, serif" }}>Why "FIMI" Over "Disinformation"?</h3>
 
         <p className="text-slate-300 leading-relaxed mb-4">
           The EU's conceptual pivot to FIMI is analytically important and worth understanding in depth. The problem with "disinformation" as a primary analytical category is threefold:
@@ -223,7 +223,7 @@ export default function FIMIPrimer() {
           The FIMI framework is the EU's attempt to move from a content-moderation paradigm (is this true or false?) to a behavioural-security paradigm (is this coordinated, deceptive, foreign-directed interference?). This shift has profound implications for how you analyse operations, attribute actors, and design responses.
         </Callout>
 
-        <h3 className="text-lg font-bold text-amber-400 mb-4 mt-8" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>The FIMI Iceberg Model</h3>
+        <h3 className="text-lg font-bold text-amber-400 mb-4 mt-8" style={{ fontFamily: "'Sixtyfour', Georgia, serif" }}>The FIMI Iceberg Model</h3>
         <p className="text-slate-300 leading-relaxed mb-4">
           The EEAS Third Report (March 2025) formalised a layered model of FIMI actor attribution — the "FIMI Exposure Matrix" — that distinguishes four levels of channel proximity to the state actor:
         </p>
@@ -261,7 +261,7 @@ export default function FIMIPrimer() {
           Understanding the history is not merely context-setting. Contemporary Russian FIMI is consciously continuous with Soviet active measures doctrine — Putin, himself a KGB officer, explicitly reconstituted the Cold War playbook for the digital age. The operational logic, institutional culture, and strategic objectives are recognisably the same; only the infrastructure has been updated.
         </p>
 
-        <h3 className="text-lg font-bold text-amber-400 mb-4" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>Soviet Origins: 1923–1991</h3>
+        <h3 className="text-lg font-bold text-amber-400 mb-4" style={{ fontFamily: "'Sixtyfour', Georgia, serif" }}>Soviet Origins: 1923–1991</h3>
 
         <Timeline events={[
           {
@@ -308,7 +308,7 @@ export default function FIMIPrimer() {
           },
         ]} />
 
-        <h3 className="text-lg font-bold text-amber-400 mb-4 mt-8" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>The 1990s Gap and Digital Reconstitution: 1991–2014</h3>
+        <h3 className="text-lg font-bold text-amber-400 mb-4 mt-8" style={{ fontFamily: "'Sixtyfour', Georgia, serif" }}>The 1990s Gap and Digital Reconstitution: 1991–2014</h3>
         <p className="text-slate-300 leading-relaxed mb-4">
           The 1990s saw a partial disruption of active measures as Russian intelligence was reorganised and resources shrank. But this period also saw a critical development: the internet created a radically new medium for information operations — one with global reach, zero distribution cost, instant amplification, and built-in anonymity. Putin, ascending to power in 1999 as a career KGB officer, recognised this immediately.
         </p>
@@ -316,7 +316,7 @@ export default function FIMIPrimer() {
           The 2000s saw the gradual reconstruction of capability. The 2007 cyberattacks on Estonia following the Bronze Soldier statue dispute are often cited as the first major test of hybrid information-plus-cyber operations. The 2008 war with Georgia saw the first coordinated use of information operations alongside kinetic military action in the modern era.
         </p>
 
-        <h3 className="text-lg font-bold text-amber-400 mb-4" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>The Crimea Model and the Pivot to FIMI: 2014–Present</h3>
+        <h3 className="text-lg font-bold text-amber-400 mb-4" style={{ fontFamily: "'Sixtyfour', Georgia, serif" }}>The Crimea Model and the Pivot to FIMI: 2014–Present</h3>
 
         <Timeline events={[
           {
@@ -349,7 +349,7 @@ export default function FIMIPrimer() {
           The strategic continuity between Soviet dezinformatsiya and contemporary Russian FIMI is the single most important historical insight for practitioners. The technology has changed; the institutional logic, the strategic objectives (weaken Western alliances, drive wedges, exploit social divisions, erode trust in facts), and the operational methods (planted stories, echo effect, agents of influence, kompromat) have not. Thomas Rid's <em>Active Measures</em> (2020) is the canonical text on this continuity.
         </Callout>
 
-        <h3 className="text-lg font-bold text-amber-400 mb-4 mt-8" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>Western Counter-Measures: Historical Precedents</h3>
+        <h3 className="text-lg font-bold text-amber-400 mb-4 mt-8" style={{ fontFamily: "'Sixtyfour', Georgia, serif" }}>Western Counter-Measures: Historical Precedents</h3>
         <p className="text-slate-300 leading-relaxed mb-4">
           The West has countered active measures before — with mixed success. The US Active Measures Working Group (AMWG), established in 1981 under Reagan, successfully exposed Soviet disinformation operations including Operation INFEKTION. Key lessons: (1) interagency coordination was essential; (2) exposure and public attribution raised the cost of operations significantly; (3) the KGB itself noted that Western counter-measures working groups caused 'great concern among the warriors of disinformation.'<Cite>MIT Press JCWS (2021)</Cite> The abrupt disbandment of the AMWG in the 1990s is now widely seen as a strategic error.
         </p>
@@ -368,7 +368,7 @@ export default function FIMIPrimer() {
           Attribution in FIMI is probabilistic, not binary. The standard is 'technical and behavioural indicators reaching a confidence threshold sufficient for policy action.' Intelligence-grade attribution differs from court-admissible attribution. The public record contains only what has been declassified or independently verified.
         </Callout>
 
-        <h3 className="text-lg font-bold text-amber-400 mb-5 mt-6" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>Russia — The Primary Actor</h3>
+        <h3 className="text-lg font-bold text-amber-400 mb-5 mt-6" style={{ fontFamily: "'Sixtyfour', Georgia, serif" }}>Russia — The Primary Actor</h3>
 
         <p className="text-slate-300 leading-relaxed mb-5">
           Russia operates the most sophisticated, highest-volume, and most consequential FIMI apparatus globally. Its operations are characterised by institutional depth, long-term horizon planning, and the integration of information operations across diplomatic, intelligence, and military functions.<Cite>EEAS 3rd Report, 2025</Cite>
@@ -411,7 +411,7 @@ export default function FIMIPrimer() {
           ))}
         </ul>
 
-        <h3 className="text-lg font-bold text-amber-400 mb-4 mt-8" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>China — The Ascending Actor</h3>
+        <h3 className="text-lg font-bold text-amber-400 mb-4 mt-8" style={{ fontFamily: "'Sixtyfour', Georgia, serif" }}>China — The Ascending Actor</h3>
 
         <p className="text-slate-300 leading-relaxed mb-5">
           China's FIMI operations differ structurally and strategically from Russia's. Where Russia prioritises destabilisation, China primarily seeks to shape a positive international image, suppress criticism of its domestic policies, and expand influence through elite capture and media ecosystem control. The EEAS 4th Report (2026) notes that China's most common tactic is "dismissing" — arguing that criticisms of China are biased — rather than fabrication.<Cite>EEAS 4th Report, March 2026</Cite>
@@ -438,7 +438,7 @@ export default function FIMIPrimer() {
           The EEAS and most Western analysts note that Russia-China FIMI cooperation, while present, remains largely opportunistic rather than coordinated. Cross-posting between the ecosystems occurs — particularly around Ukrainian war narratives and Western multilateral events — but analysts do not find evidence of joint operational planning. The two actors share strategic interests without sharing an operational playbook. <Cite>CEPA (2025); EEAS 4th Report (2026)</Cite>
         </Callout>
 
-        <h3 className="text-lg font-bold text-amber-400 mb-4 mt-8" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>Non-State, Proxy, and Mercenary Actors</h3>
+        <h3 className="text-lg font-bold text-amber-400 mb-4 mt-8" style={{ fontFamily: "'Sixtyfour', Georgia, serif" }}>Non-State, Proxy, and Mercenary Actors</h3>
         <p className="text-slate-300 leading-relaxed mb-4">
           One of the most significant structural trends in contemporary FIMI is the deliberate outsourcing of operations to provide state deniability. Following the mass expulsion of 400+ Russian intelligence officers from Europe in 2022, the GRU's Unit 29155 pivoted to recruiting low-level criminals, migrants, and extremists via Telegram to conduct physical and informational sabotage operations.<Cite>IISS; GLOBSEC 2025</Cite>
         </p>
@@ -459,7 +459,7 @@ export default function FIMIPrimer() {
           ))}
         </div>
 
-        <h3 className="text-lg font-bold text-amber-400 mb-4 mt-8" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>Eastern European Context in Depth</h3>
+        <h3 className="text-lg font-bold text-amber-400 mb-4 mt-8" style={{ fontFamily: "'Sixtyfour', Georgia, serif" }}>Eastern European Context in Depth</h3>
 
         <p className="text-slate-300 leading-relaxed mb-4">
           Eastern Europe is the most contested information battleground globally. Several structural factors explain this: geographic proximity to Russia, significant Russian-speaking minority populations, Soviet-era institutional penetration, fragile or newly established democratic institutions, and the direct military conflict in Ukraine as a backdrop and pretext for operations.
@@ -588,7 +588,7 @@ export default function FIMIPrimer() {
             <div key={i} className="border border-slate-700 rounded-lg p-5 bg-slate-800/20">
               <div className="flex items-start justify-between mb-3">
                 <div>
-                  <h4 className="font-bold text-slate-100 text-base" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>{op.name}</h4>
+                  <h4 className="font-bold text-slate-100 text-base" style={{ fontFamily: "'Sixtyfour', Georgia, serif" }}>{op.name}</h4>
                   <div className="text-slate-500 font-mono text-xs mt-1">{op.date}</div>
                 </div>
                 <Tag color={op.color}>RUSSIA</Tag>
@@ -636,7 +636,7 @@ export default function FIMIPrimer() {
           Counter-FIMI is a field still finding its paradigm. There is significant disagreement about what works, at what scale, for which populations, and with what unintended consequences. Academic scepticism about the effectiveness of some widely-funded interventions is growing — and practitioners should engage with that debate seriously.
         </p>
 
-        <h3 className="text-lg font-bold text-amber-400 mb-5" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>1. Detection and Attribution</h3>
+        <h3 className="text-lg font-bold text-amber-400 mb-5" style={{ fontFamily: "'Sixtyfour', Georgia, serif" }}>1. Detection and Attribution</h3>
         <p className="text-slate-300 leading-relaxed mb-4">
           Detection operates on two axes: content signals and behavioural signals. As generative AI makes content signals increasingly unreliable (AI-generated text and images are now often indistinguishable from human-produced content), the field is shifting toward behavioural detection as the primary methodology.
         </p>
@@ -654,7 +654,7 @@ export default function FIMIPrimer() {
           ))}
         </div>
 
-        <h3 className="text-lg font-bold text-amber-400 mb-5 mt-8" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>2. Prebunking and Inoculation Theory</h3>
+        <h3 className="text-lg font-bold text-amber-400 mb-5 mt-8" style={{ fontFamily: "'Sixtyfour', Georgia, serif" }}>2. Prebunking and Inoculation Theory</h3>
         <p className="text-slate-300 leading-relaxed mb-4">
           Prebunking — exposing people to weakened doses of manipulation techniques before they encounter real operations — has become one of the most researched and widely deployed counter-FIMI interventions. The theoretical basis is psychological inoculation theory (McGuire, 1964), extended to misinformation contexts by Cambridge's Sander van der Linden and colleagues.
         </p>
@@ -672,7 +672,7 @@ export default function FIMIPrimer() {
           Current research consensus: inoculation interventions are effective for educating people about manipulation <em>techniques</em> (emotional appeals, false urgency, conspiracy logic). They are less effective for specific false claims (debunking). Scaling is the core challenge — prebunking a nation's information literacy requires sustained, funded, platform-delivered campaigns rather than one-off educational programmes.
         </p>
 
-        <h3 className="text-lg font-bold text-amber-400 mb-5 mt-8" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>3. Platform Governance and the Digital Services Act</h3>
+        <h3 className="text-lg font-bold text-amber-400 mb-5 mt-8" style={{ fontFamily: "'Sixtyfour', Georgia, serif" }}>3. Platform Governance and the Digital Services Act</h3>
         <p className="text-slate-300 leading-relaxed mb-4">
           Platform governance is now the EU's primary structural counter-FIMI tool. The Digital Services Act (DSA), which began applying to Very Large Online Platforms (VLOPs) in 2023, requires platforms to:
         </p>
@@ -696,7 +696,7 @@ export default function FIMIPrimer() {
           A major structural challenge for EU counter-FIMI via platforms: X (Twitter) accounted for 88% of detected FIMI activity in EEAS 2024 data, while progressively retreating from content moderation. EEAS data collection relies on accessible platform data — a fundamentally reactive methodology where detection lags operation by weeks or months.
         </Callout>
 
-        <h3 className="text-lg font-bold text-amber-400 mb-5 mt-8" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>4. The EU FIMI Toolbox</h3>
+        <h3 className="text-lg font-bold text-amber-400 mb-5 mt-8" style={{ fontFamily: "'Sixtyfour', Georgia, serif" }}>4. The EU FIMI Toolbox</h3>
         <p className="text-slate-300 leading-relaxed mb-4">
           The EEAS has developed an integrated response framework — the FIMI Toolbox — that organises counter-FIMI instruments across five action areas:
         </p>
@@ -715,7 +715,7 @@ export default function FIMIPrimer() {
           ))}
         </div>
 
-        <h3 className="text-lg font-bold text-amber-400 mb-5 mt-8" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>5. FIMI Deterrence — The 4th Report Framework</h3>
+        <h3 className="text-lg font-bold text-amber-400 mb-5 mt-8" style={{ fontFamily: "'Sixtyfour', Georgia, serif" }}>5. FIMI Deterrence — The 4th Report Framework</h3>
         <p className="text-slate-300 leading-relaxed mb-4">
           The EEAS 4th Annual Report (March 2026) introduces the "FIMI Deterrence Playbook" — a shift from reactive detection and response to proactive cost-raising. The logic: if FIMI operations rely on specific infrastructure (hosting providers, payment systems, platform accounts, monetisation pathways), targeting these choke points can disrupt operations and raise their cost.
         </p>
@@ -737,7 +737,7 @@ export default function FIMIPrimer() {
           subtitle="The institutional landscape — government, intergovernmental, civil society, private sector. European and Europe-relevant focus, must-know players first. Where relevant, crossover with innovation/org change flagged."
         />
 
-        <h3 className="text-lg font-bold text-amber-400 mb-5" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>Government & Intergovernmental</h3>
+        <h3 className="text-lg font-bold text-amber-400 mb-5" style={{ fontFamily: "'Sixtyfour', Georgia, serif" }}>Government & Intergovernmental</h3>
 
         <OrgCard
           name="EEAS East StratCom Task Force / EUvsDisinfo"
@@ -781,7 +781,7 @@ export default function FIMIPrimer() {
           desc="The UK's primary government FIMI response capability sits across the FCDO (for overseas/foreign interference) and the Home Office Counter Disinformation Unit (for domestic operations). RESIST is the GCS framework for building government communicators' counter-disinformation skills. The UK has taken a more decentralised approach than the EU, distributing FIMI response across multiple departments with the National Security Council as coordinator."
         />
 
-        <h3 className="text-lg font-bold text-amber-400 mb-5 mt-8" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>Civil Society & Research</h3>
+        <h3 className="text-lg font-bold text-amber-400 mb-5 mt-8" style={{ fontFamily: "'Sixtyfour', Georgia, serif" }}>Civil Society & Research</h3>
 
         <OrgCard
           name="EU DisinfoLab"
@@ -829,7 +829,7 @@ export default function FIMIPrimer() {
           crossover="Network analysis methodology has applications in org network analysis — adjacent skill set"
         />
 
-        <h3 className="text-lg font-bold text-amber-400 mb-5 mt-8" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>Private Sector</h3>
+        <h3 className="text-lg font-bold text-amber-400 mb-5 mt-8" style={{ fontFamily: "'Sixtyfour', Georgia, serif" }}>Private Sector</h3>
 
         <OrgCard
           name="NewsGuard"
@@ -882,7 +882,7 @@ export default function FIMIPrimer() {
           Selection criteria: (1) cited or recommended in peer-reviewed literature or by institutional practitioners (not just public popularity); (2) specific to FIMI/information warfare/hybrid conflict rather than general media criticism; (3) where books, ratings drawn from professional reviews in specialist outlets (Foreign Affairs, Spectator Intelligence, CIA Studies in Intelligence, IISS Survival).
         </Callout>
 
-        <h3 className="text-lg font-bold text-amber-400 mb-5 mt-6" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>Essential Books</h3>
+        <h3 className="text-lg font-bold text-amber-400 mb-5 mt-6" style={{ fontFamily: "'Sixtyfour', Georgia, serif" }}>Essential Books</h3>
 
         <SourceCard
           type="Book"
@@ -942,7 +942,7 @@ export default function FIMIPrimer() {
           desc="A highly readable account of how social media has become a domain of warfare — covering ISIS, Russia, China, and domestic actors. Singer (New America) is among the most respected US national security researchers writing for accessible audiences. Frequently recommended by military and intelligence professionals for the accessible framing of digital information warfare."
         />
 
-        <h3 className="text-lg font-bold text-amber-400 mb-5 mt-8" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>Primary Institutional Sources (Read Regularly)</h3>
+        <h3 className="text-lg font-bold text-amber-400 mb-5 mt-8" style={{ fontFamily: "'Sixtyfour', Georgia, serif" }}>Primary Institutional Sources (Read Regularly)</h3>
 
         <SourceCard
           type="Database/Tool"
@@ -985,7 +985,7 @@ export default function FIMIPrimer() {
           url="https://disarmframework.com"
         />
 
-        <h3 className="text-lg font-bold text-amber-400 mb-5 mt-8" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>Podcasts & Audio</h3>
+        <h3 className="text-lg font-bold text-amber-400 mb-5 mt-8" style={{ fontFamily: "'Sixtyfour', Georgia, serif" }}>Podcasts & Audio</h3>
 
         <SourceCard
           type="Podcast"
@@ -1018,7 +1018,7 @@ export default function FIMIPrimer() {
           url="https://podcasts.ox.ac.uk/keywords/misinformation"
         />
 
-        <h3 className="text-lg font-bold text-amber-400 mb-5 mt-8" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>Academic Journals</h3>
+        <h3 className="text-lg font-bold text-amber-400 mb-5 mt-8" style={{ fontFamily: "'Sixtyfour', Georgia, serif" }}>Academic Journals</h3>
 
         <SourceCard
           type="Journal"
@@ -1054,7 +1054,7 @@ export default function FIMIPrimer() {
           The single most important framing principle for this section: the strategic logic of AI-enabled FIMI is not new. The objectives (undermine trust, amplify division, erode institutional legitimacy) and the playbook (fabricate, amplify, launder, confuse) are continuous with Soviet-era active measures. What AI changes is the economics and scale of execution — dramatically lowering cost, reducing required human labour, and enabling simultaneous multi-language, multi-platform, hyper-personalised operations. The constraint on FIMI campaigns has shifted from human labour to compute.
         </Callout>
 
-        <h3 className="text-lg font-bold text-amber-400 mb-5 mt-6" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>What Has Changed vs. What Hasn't</h3>
+        <h3 className="text-lg font-bold text-amber-400 mb-5 mt-6" style={{ fontFamily: "'Sixtyfour', Georgia, serif" }}>What Has Changed vs. What Hasn't</h3>
 
         <div className="grid grid-cols-1 gap-4 mb-8">
           <div className="border border-slate-700 rounded-lg overflow-hidden">
@@ -1103,7 +1103,7 @@ export default function FIMIPrimer() {
           </div>
         </div>
 
-        <h3 className="text-lg font-bold text-amber-400 mb-5" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>The Scale Explosion: Data Points</h3>
+        <h3 className="text-lg font-bold text-amber-400 mb-5" style={{ fontFamily: "'Sixtyfour', Georgia, serif" }}>The Scale Explosion: Data Points</h3>
         <div className="grid grid-cols-2 gap-4 mb-8">
           {[
             { stat: "259%", desc: "Increase in AI-related FIMI TTPs from 2024 to 2025, per EEAS 4th Report. From 41 incidents to 147.", cite: "EEAS 4th Report, 2026" },
@@ -1119,7 +1119,7 @@ export default function FIMIPrimer() {
           ))}
         </div>
 
-        <h3 className="text-lg font-bold text-amber-400 mb-5" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>AI Attack Vectors in Detail</h3>
+        <h3 className="text-lg font-bold text-amber-400 mb-5" style={{ fontFamily: "'Sixtyfour', Georgia, serif" }}>AI Attack Vectors in Detail</h3>
 
         <div className="space-y-5 mb-8">
           {[
@@ -1155,7 +1155,7 @@ export default function FIMIPrimer() {
             },
           ].map((v, i) => (
             <div key={i} className="border border-slate-700 rounded-lg p-5 bg-slate-800/20">
-              <h4 className="font-bold text-slate-100 text-sm mb-4" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>{v.vector}</h4>
+              <h4 className="font-bold text-slate-100 text-sm mb-4" style={{ fontFamily: "'Sixtyfour', Georgia, serif" }}>{v.vector}</h4>
               <div className="grid grid-cols-1 gap-3 text-sm">
                 <div>
                   <span className="text-slate-500 font-mono text-xs">PRE-AI EQUIVALENT: </span>
@@ -1174,7 +1174,7 @@ export default function FIMIPrimer() {
           ))}
         </div>
 
-        <h3 className="text-lg font-bold text-amber-400 mb-5" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>Counter-AI-FIMI: The Detection Arms Race</h3>
+        <h3 className="text-lg font-bold text-amber-400 mb-5" style={{ fontFamily: "'Sixtyfour', Georgia, serif" }}>Counter-AI-FIMI: The Detection Arms Race</h3>
         <p className="text-slate-300 leading-relaxed mb-4">
           The field is in an active adversarial dynamic between content generation and content detection. Key developments:
         </p>
@@ -1192,7 +1192,7 @@ export default function FIMIPrimer() {
           ))}
         </ul>
 
-        <h3 className="text-lg font-bold text-amber-400 mb-5" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>The Cognitive Effects Dimension</h3>
+        <h3 className="text-lg font-bold text-amber-400 mb-5" style={{ fontFamily: "'Sixtyfour', Georgia, serif" }}>The Cognitive Effects Dimension</h3>
         <p className="text-slate-300 leading-relaxed mb-4">
           AI-enabled FIMI introduces a new and underresearched second-order effect: the impact on critical thinking capacity of populations exposed to AI-mediated information environments. A 2025 study found that using LLMs reduced critical thinking scores in participants. If AI simultaneously enables FIMI at industrial scale <em>and</em> degrades the critical faculties that would counter it, the compounding effect is deeply concerning.
         </p>
@@ -1204,7 +1204,7 @@ export default function FIMIPrimer() {
           The frontier issue for AI-FIMI as of 2026: the transition from "humans using AI tools" to "autonomous multi-agent systems conducting FIMI at scale without human-in-the-loop supervision." Tseng et al. (2026) document multi-agent FIMI pipelines. If this model proliferates, the constraint on FIMI campaigns becomes purely computational cost — potentially enabling state-level information operations by non-state actors with sufficient AI infrastructure. This is the scenario that most concerns frontier analysts. <Cite>arXiv:2601.21963; EEAS 4th Report</Cite>
         </Callout>
 
-        <h3 className="text-lg font-bold text-amber-400 mb-5 mt-8" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>Key Researchers & Voices on AI-FIMI</h3>
+        <h3 className="text-lg font-bold text-amber-400 mb-5 mt-8" style={{ fontFamily: "'Sixtyfour', Georgia, serif" }}>Key Researchers & Voices on AI-FIMI</h3>
         <div className="grid grid-cols-1 gap-3">
           {[
             { name: "Renée DiResta", role: "Former Research Director, Stanford Internet Observatory", contribution: "Most cited practitioner on AI-enabled influence operations in Western contexts. Author of Invisible Rulers (2024)." },
@@ -1249,7 +1249,7 @@ export default function FIMIPrimer() {
         <div className="flex items-center justify-between">
           <div>
             <div className="text-amber-500 font-mono text-xs tracking-widest mb-1">INFORMATION INTEGRITY — PRACTITIONER PRIMER</div>
-            <h1 className="text-xl font-bold text-slate-100" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+            <h1 className="text-xl font-bold text-slate-100" style={{ fontFamily: "'Sixtyfour', Georgia, serif" }}>
               FIMI, Hybrid Warfare & Information Integrity
             </h1>
             <p className="text-slate-500 text-xs mt-1 font-mono">March 2026 · Sources: EEAS 4th Report, NATO StratCom, Academic Literature</p>

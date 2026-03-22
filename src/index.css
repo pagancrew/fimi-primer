@@ -38,7 +38,7 @@
   :root {
     --text: #9ca3af;
     --text-h: #f3f4f6;
-    --bg: #16171d;
+    --bg: #0a1a0a;
     --border: #2e303a;
     --code-bg: #1f2028;
     --accent: #c084fc;
@@ -56,14 +56,14 @@
 
 body {
   margin: 0;
+  text-align: left;
 }
 
 #root {
-  width: 1126px;
+  width: 100%;
   max-width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  border-inline: 1px solid var(--border);
+  margin: 0;
+  text-align: left;
   min-height: 100svh;
   display: flex;
   flex-direction: column;
