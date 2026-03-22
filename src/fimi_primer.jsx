@@ -1260,7 +1260,7 @@ export default function FIMIPrimer() {
 
   return (
     <div className="min-h-screen flex flex-col" style={{
-      background: "linear-gradient(135deg, #0a0d14 0%, #0d1117 50%, #0a0f1a 100%)",
+      background: "#0a1a00",
       fontFamily: "'IBM Plex Sans', 'Helvetica Neue', sans-serif",
       color: "#e2e8f0"
     }}>
@@ -1274,7 +1274,7 @@ export default function FIMIPrimer() {
       `}</style>
 
       {/* Header */}
-      <header className="border-b border-slate-800 px-6 py-4 flex-shrink-0">
+      <header className="fixed top-0 left-0 right-0 border-b border-slate-800 px-6 py-4 z-20 bg-slate-900 flex-shrink-0">
         <div className="flex items-center justify-between">
           <div>
             <div className="text-amber-500 font-mono text-xs tracking-widest mb-1">INFORMATION INTEGRITY — PRACTITIONER PRIMER</div>
@@ -1296,9 +1296,9 @@ export default function FIMIPrimer() {
         </div>
       </header>
 
-      <div className="flex flex-1 overflow-hidden">
+      <div className="flex flex-1 overflow-hidden pt-16">
         {/* Sidebar Navigation */}
-        <nav className="w-64 flex-shrink-0 border-r border-slate-800 overflow-y-auto py-4">
+        <nav className="fixed left-0 top-16 h-[calc(100vh-4rem)] w-64 flex-shrink-0 border-r border-slate-800 overflow-y-auto py-4 z-10">
           {sections.map((s) => (
             <button
               key={s.id}
@@ -1315,7 +1315,7 @@ export default function FIMIPrimer() {
         </nav>
 
         {/* Main Content */}
-        <main ref={contentRef} className="flex-1 overflow-y-auto px-8 py-8 max-w-4xl">
+        <main ref={contentRef} className="flex-1 overflow-y-auto px-8 py-8 max-w-4xl ml-64 pt-20">
           {content[active] || (
             <div className="text-slate-500 font-mono text-sm">Section content loading…</div>
           )}
