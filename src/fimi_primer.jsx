@@ -1277,11 +1277,11 @@ export default function FIMIPrimer() {
       <header className="fixed top-0 left-0 right-0 border-b border-slate-800 px-6 py-4 z-20 bg-slate-950 flex-shrink-0 h-16 flex items-center" style={{background: '#0a1a00'}}>
         <div className="flex items-center justify-between">
           <div>
-            <div className="text-amber-500 font-mono text-xs tracking-widest mb-0.5">INFORMATION INTEGRITY — PRACTITIONER PRIMER</div>
+            <div className="text-amber-500 font-mono text-xs tracking-widest mb-1">INFORMATION INTEGRITY — PRACTITIONER PRIMER</div>
             <h1 className="text-xl font-bold text-slate-100" style={{ fontFamily: "'Sixtyfour', Georgia, serif" }}>
               FIMI, Hybrid Warfare & Information Integrity
             </h1>
-            <p className="text-slate-500 text-xs mt-0.5 font-mono">
+            <p className="text-slate-500 text-xs mt-1 font-mono">
               March 2026 · Sources: EEAS 4th Report, NATO StratCom, Academic Literature · AI disclosure: Compiled and created using Claude Code and Visual Studio · 
               <a href="https://www.linkedin.com/in/jhnnsmyr/" target="_blank" rel="noopener noreferrer" className="text-amber-400 hover:text-amber-300">LinkedIn</a> · 
               <a href="https://github.com/pagancrew" target="_blank" rel="noopener noreferrer" className="text-amber-400 hover:text-amber-300">GitHub</a>
