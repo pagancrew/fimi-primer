@@ -10,6 +10,7 @@ const sections = [
   { id: "organisations", label: "06 — Key Organisations" },
   { id: "sources", label: "07 — Curated Sources" },
   { id: "ai", label: "08 — AI & FIMI" },
+  { id: "quickrefs", label: "09 — Quick References" },
 ];
 
 const Tag = ({ children, color = "slate" }) => {
@@ -34,13 +35,13 @@ const Cite = ({ children }) => (
 );
 
 const SectionHeader = ({ number, title, subtitle }) => (
-  <div className="mb-10 pb-6 border-b border-slate-700">
-    <div className="text-slate-500 font-mono text-sm mb-1">{number}</div>
-    <h2 className="text-3xl font-bold text-slate-100 tracking-tight mb-2"
-        style={{ fontFamily: "'Sixtyfour', Georgia, serif" }}>
+  <div className="mb-5 pb-4 border-b border-slate-700">
+    <div className="text-slate-500 font-mono text-xs mb-1">{number}</div>
+    <h2 className="text-xl font-bold tracking-tight mb-2"
+        style={{ fontFamily: "'Sixtyfour', Georgia, serif", color: "#05f29b" }}>
       {title}
     </h2>
-    {subtitle && <p className="text-slate-400 text-base leading-relaxed">{subtitle}</p>}
+    {subtitle && <p className="text-slate-400 text-sm leading-relaxed">{subtitle}</p>}
   </div>
 );
 
@@ -1227,44 +1228,61 @@ export default function FIMIPrimer() {
         </div>
       </div>
     ),
+    quickrefs: (
+      <div>
+        <SectionHeader
+          number="SECTION 09"
+          title="Quick References"
+          subtitle="Essential links for FIMI research and monitoring."
+        />
+        <div className="space-y-3">
+          {[
+            { label: "EUvsDisinfo", url: "https://euvsdisinfo.eu", desc: "EU East StratCom Task Force database of pro-Kremlin disinformation cases." },
+            { label: "EEAS FIMI Reports", url: "https://www.eeas.europa.eu/eeas/information-integrity-and-countering-foreign-information-manipulation-interference-fimi_en", desc: "European External Action Service reports on foreign information manipulation and interference." },
+            { label: "DFRLab", url: "https://dfrlab.org", desc: "Atlantic Council's Digital Forensic Research Lab — investigative reports on disinformation and influence operations." },
+            { label: "DISARM Framework", url: "https://disarmframework.com", desc: "Open-source framework for understanding and countering disinformation, modelled on MITRE ATT&CK." },
+            { label: "NATO StratCom COE", url: "https://stratcomcoe.org", desc: "NATO Strategic Communications Centre of Excellence — research, publications, and training on strategic communications." },
+          ].map((r, i) => (
+            <div key={i} className="border border-slate-700 rounded p-4 bg-slate-800/20 hover:bg-slate-800/40 transition-colors">
+              <a href={r.url} target="_blank" rel="noopener noreferrer"
+                className="font-semibold text-sm hover:opacity-80 transition-opacity block mb-1" style={{ color: "#05f29b" }}>
+                ↗ {r.label}
+              </a>
+              <p className="text-slate-400 text-sm leading-relaxed">{r.desc}</p>
+              <div className="text-slate-600 font-mono text-xs mt-2 truncate">{r.url}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    ),
   };
 
   return (
-    <div className="min-h-screen flex flex-col" style={{
-      background: "linear-gradient(135deg, #0a0d14 0%, #0d1117 50%, #0a0f1a 100%)",
+    <div className="h-screen flex flex-col" style={{
+      background: "#011f14",
       fontFamily: "'IBM Plex Sans', 'Helvetica Neue', sans-serif",
       color: "#e2e8f0"
     }}>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,700;1,400&display=swap');
         ::-webkit-scrollbar { width: 4px; }
-        ::-webkit-scrollbar-track { background: #0d1117; }
-        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 2px; }
-        .nav-item:hover { background: rgba(245, 158, 11, 0.08); }
-        .nav-item.active { background: rgba(245, 158, 11, 0.12); border-left-color: #f59e0b; }
+        ::-webkit-scrollbar-track { background: #011f14; }
+        ::-webkit-scrollbar-thumb { background: #1a4a30; border-radius: 2px; }
+        .nav-item:hover { background: rgba(5, 242, 155, 0.08); }
+        .nav-item.active { background: rgba(5, 242, 155, 0.12); border-left-color: #05f29b; }
       `}</style>
 
       {/* Header */}
-      <header className="border-b border-slate-800 px-6 py-4 flex-shrink-0">
-        <div className="flex items-center justify-between">
-          <div>
-            <div className="text-amber-500 font-mono text-xs tracking-widest mb-1">INFORMATION INTEGRITY — PRACTITIONER PRIMER</div>
-            <h1 className="text-xl font-bold text-slate-100" style={{ fontFamily: "'Sixtyfour', Georgia, serif" }}>
-              FIMI, Hybrid Warfare & Information Integrity
-            </h1>
-            <p className="text-slate-500 text-xs mt-1 font-mono">
-              March 2026 · Sources: EEAS 4th Report, NATO StratCom, Academic Literature · AI disclosure: Compiled and created using Claude Code and Visual Studio · 
-              <a href="https://www.linkedin.com/in/jhnnsmyr/" target="_blank" rel="noopener noreferrer" className="text-amber-400 hover:text-amber-300">LinkedIn</a> · 
-              <a href="https://github.com/pagancrew" target="_blank" rel="noopener noreferrer" className="text-amber-400 hover:text-amber-300">GitHub</a>
-            </p>
-          </div>
-          <div className="flex gap-2 flex-wrap justify-end">
-            <Tag color="red">Russia</Tag>
-            <Tag color="blue">China</Tag>
-            <Tag color="green">EU Policy</Tag>
-            <Tag color="amber">AI-Enabled</Tag>
-          </div>
-        </div>
+      <header className="border-b border-slate-800 px-6 py-3 flex-shrink-0" style={{ background: "#011f14" }}>
+        <div className="text-amber-500 font-mono text-xs tracking-widest mb-1">INFORMATION INTEGRITY — PRACTITIONER PRIMER</div>
+        <h1 className="text-xl font-bold" style={{ fontFamily: "'Sixtyfour', Georgia, serif", color: "#05f29b" }}>
+          FIMI, Hybrid Warfare & Information Integrity
+        </h1>
+        <p className="text-white font-mono mt-1" style={{ fontSize: "10px" }}>
+          March 2026 · Sources: EEAS 4th Report, NATO StratCom, Academic Literature · AI disclosure: Compiled and created using Claude Code and Visual Studio ·{" "}
+          <a href="https://www.linkedin.com/in/jhnnsmyr/" target="_blank" rel="noopener noreferrer" className="text-amber-400 hover:text-amber-300">LinkedIn</a> ·{" "}
+          <a href="https://github.com/pagancrew" target="_blank" rel="noopener noreferrer" className="text-amber-400 hover:text-amber-300">GitHub</a>
+        </p>
       </header>
 
       <div className="flex flex-1 overflow-hidden">
@@ -1276,35 +1294,19 @@ export default function FIMIPrimer() {
               onClick={() => setActive(s.id)}
               className={`nav-item w-full text-left px-5 py-3 border-l-2 transition-all ${
                 active === s.id
-                  ? "active text-amber-400 border-amber-500 bg-amber-900/10"
+                  ? "active border-transparent"
                   : "text-slate-400 border-transparent hover:text-slate-300"
               }`}
+              style={active === s.id ? { color: "#05f29b" } : {}}
             >
               <span className="font-mono text-xs">{s.label}</span>
             </button>
           ))}
 
-          <div className="mt-6 px-5">
-            <div className="border-t border-slate-800 pt-5">
-              <div className="text-slate-600 font-mono text-xs mb-2">QUICK REFS</div>
-              {[
-                { label: "EUvsDisinfo", url: "https://euvsdisinfo.eu" },
-                { label: "EEAS FIMI Reports", url: "https://www.eeas.europa.eu/eeas/information-integrity-and-countering-foreign-information-manipulation-interference-fimi_en" },
-                { label: "DFRLab", url: "https://dfrlab.org" },
-                { label: "DISARM Framework", url: "https://disarmframework.com" },
-                { label: "NATO StratCom COE", url: "https://stratcomcoe.org" },
-              ].map((r, i) => (
-                <a key={i} href={r.url} target="_blank" rel="noopener noreferrer"
-                  className="block text-amber-600 hover:text-amber-500 font-mono text-xs py-1 truncate transition-colors">
-                  ↗ {r.label}
-                </a>
-              ))}
-            </div>
-          </div>
         </nav>
 
         {/* Main Content */}
-        <main ref={contentRef} className="flex-1 overflow-y-auto px-8 py-8 max-w-4xl">
+        <main ref={contentRef} className="flex-1 overflow-y-auto px-6 py-6 max-w-4xl">
           {content[active] || (
             <div className="text-slate-500 font-mono text-sm">Section content loading…</div>
           )}
