@@ -10,7 +10,6 @@ const sections = [
   { id: "organisations", label: "06 — Key Organisations" },
   { id: "sources", label: "07 — Curated Sources" },
   { id: "ai", label: "08 — AI & FIMI" },
-  { id: "quickrefs", label: "09 — Quick Refs" },
 ];
 
 const Tag = ({ children, color = "slate" }) => {
@@ -1228,39 +1227,11 @@ export default function FIMIPrimer() {
         </div>
       </div>
     ),
-
-    quickrefs: (
-      <div>
-        <SectionHeader
-          number="SECTION 09"
-          title="Quick Refs"
-          subtitle="Essential resources and tools for FIMI research and monitoring."
-        />
-
-        <div className="grid grid-cols-1 gap-4">
-          {[
-            { name: "EUvsDisinfo", url: "https://euvsdisinfo.eu", desc: "EU's primary database of pro-Kremlin disinformation narratives. Essential for tracking Russian FIMI operations." },
-            { name: "EEAS FIMI Reports", url: "https://www.eeas.europa.eu/eeas/information-integrity-and-countering-foreign-information-manipulation-interference-fimi_en", desc: "Official EU FIMI threat reports and analysis. The authoritative source for European policy perspectives." },
-            { name: "DFRLab", url: "https://dfrlab.org", desc: "Atlantic Council's Digital Forensics Research Lab. Leading investigative journalism on disinformation and FIMI." },
-            { name: "DISARM Framework", url: "https://disarmframework.com", desc: "Open-source framework for mapping FIMI tactics, techniques, and procedures. Essential for systematic analysis." },
-            { name: "NATO StratCom COE", url: "https://stratcomcoe.org", desc: "NATO's Strategic Communications Centre of Excellence. Research and training on information warfare." },
-          ].map((ref, i) => (
-            <div key={i} className="border border-slate-700 rounded p-4 bg-slate-800/20 hover:bg-slate-800/40 transition-colors">
-              <div className="flex items-start justify-between mb-2">
-                <h4 className="font-semibold text-slate-100 text-sm">{ref.name}</h4>
-                <a href={ref.url} target="_blank" rel="noopener noreferrer" className="text-amber-500 text-xs font-mono hover:text-amber-400">→</a>
-              </div>
-              <p className="text-slate-400 text-sm">{ref.desc}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    ),
   };
 
   return (
     <div className="min-h-screen flex flex-col" style={{
-      background: "#0a1a00",
+      background: "linear-gradient(135deg, #0a0d14 0%, #0d1117 50%, #0a0f1a 100%)",
       fontFamily: "'IBM Plex Sans', 'Helvetica Neue', sans-serif",
       color: "#e2e8f0"
     }}>
@@ -1274,7 +1245,7 @@ export default function FIMIPrimer() {
       `}</style>
 
       {/* Header */}
-      <header className="fixed top-0 left-0 right-0 border-b border-slate-800 px-6 py-4 z-20 bg-slate-950 flex-shrink-0 h-16 flex items-center" style={{background: '#0a1a00'}}>
+      <header className="border-b border-slate-800 px-6 py-4 flex-shrink-0">
         <div className="flex items-center justify-between">
           <div>
             <div className="text-amber-500 font-mono text-xs tracking-widest mb-1">INFORMATION INTEGRITY — PRACTITIONER PRIMER</div>
@@ -1296,9 +1267,9 @@ export default function FIMIPrimer() {
         </div>
       </header>
 
-      <div className="flex flex-1 overflow-hidden pt-16">
+      <div className="flex flex-1 overflow-hidden">
         {/* Sidebar Navigation */}
-        <nav className="fixed left-0 top-16 h-[calc(100vh-4rem)] w-64 flex-shrink-0 border-r border-slate-800 overflow-y-auto py-4 z-10 bg-slate-950" style={{background: '#0a1a00'}}>
+        <nav className="w-64 flex-shrink-0 border-r border-slate-800 overflow-y-auto py-4">
           {sections.map((s) => (
             <button
               key={s.id}
@@ -1312,10 +1283,28 @@ export default function FIMIPrimer() {
               <span className="font-mono text-xs">{s.label}</span>
             </button>
           ))}
+
+          <div className="mt-6 px-5">
+            <div className="border-t border-slate-800 pt-5">
+              <div className="text-slate-600 font-mono text-xs mb-2">QUICK REFS</div>
+              {[
+                { label: "EUvsDisinfo", url: "https://euvsdisinfo.eu" },
+                { label: "EEAS FIMI Reports", url: "https://www.eeas.europa.eu/eeas/information-integrity-and-countering-foreign-information-manipulation-interference-fimi_en" },
+                { label: "DFRLab", url: "https://dfrlab.org" },
+                { label: "DISARM Framework", url: "https://disarmframework.com" },
+                { label: "NATO StratCom COE", url: "https://stratcomcoe.org" },
+              ].map((r, i) => (
+                <a key={i} href={r.url} target="_blank" rel="noopener noreferrer"
+                  className="block text-amber-600 hover:text-amber-500 font-mono text-xs py-1 truncate transition-colors">
+                  ↗ {r.label}
+                </a>
+              ))}
+            </div>
+          </div>
         </nav>
 
         {/* Main Content */}
-        <main ref={contentRef} className="flex-1 overflow-y-auto px-8 py-8 max-w-4xl ml-64 pt-24">
+        <main ref={contentRef} className="flex-1 overflow-y-auto px-8 py-8 max-w-4xl">
           {content[active] || (
             <div className="text-slate-500 font-mono text-sm">Section content loading…</div>
           )}
