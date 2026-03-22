@@ -57,6 +57,7 @@
 body {
   margin: 0;
   text-align: left;
+  background: var(--bg);
 }
 
 #root {
