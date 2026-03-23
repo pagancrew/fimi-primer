@@ -735,7 +735,7 @@ export default function FIMIPrimer() {
         <SectionHeader
           number="SECTION 06"
           title="Key Organisations"
-          subtitle="The institutional landscape — government, intergovernmental, civil society, private sector. European and Europe-relevant focus, must-know players first. Where relevant, crossover with innovation/org change flagged."
+          subtitle="The institutional landscape — government, intergovernmental, civil society, private sector. European and Europe-relevant focus, must-know players first."
         />
 
         <h3 className="text-lg font-bold text-amber-400 mb-5" style={{ fontFamily: "'Sixtyfour', Georgia, serif" }}>Government & Intergovernmental</h3>
@@ -751,9 +751,8 @@ export default function FIMIPrimer() {
           name="NATO Strategic Communications Centre of Excellence (StratCom COE)"
           type="Government/Intergovernmental"
           country="NATO — Riga, Latvia"
-          desc="A NATO-accredited centre of excellence that researches and develops NATO's strategic communications and counter-disinformation capabilities. Publishes an academic journal (now in Volume 15), organises the annual Riga StratCom Dialogue (premier government-to-government forum on information integrity), and produced NATO's first strategic communications fundamentals doctrine in 2024. The 2022 IIO Attribution Framework is a key technical product. Crossover note: runs training programmes for StratCom professionals that blend communications theory with national security practice."
+          desc="A NATO-accredited centre of excellence that researches and develops NATO's strategic communications and counter-disinformation capabilities. Publishes an academic journal (now in Volume 15), organises the annual Riga StratCom Dialogue (premier government-to-government forum on information integrity), and produced NATO's first strategic communications fundamentals doctrine in 2024. The 2022 IIO Attribution Framework is a key technical product."
           url="https://stratcomcoe.org"
-          crossover="Communications methodology, StratCom doctrine — relevant to public affairs / org comms backgrounds"
         />
         <OrgCard
           name="NATO HUMINT / Hybrid Centre of Excellence (Hybrid COE)"
@@ -790,7 +789,6 @@ export default function FIMIPrimer() {
           country="Brussels"
           desc="Independent NGO. First identified and named the Doppelganger campaign (September 2022). Maintains the Doppelganger Hub — the most comprehensive public tracker of the operation. Publishes methodological resources on FIMI investigation. Runs regular Disinfo Update newsletters followed closely by practitioners. Strong technical-analytical focus."
           url="https://www.disinfo.eu"
-          crossover="Strong methodological publications — accessible for practitioners building OSINT/analysis skills"
         />
         <OrgCard
           name="DFRLab (Digital Forensic Research Lab, Atlantic Council)"
@@ -812,7 +810,6 @@ export default function FIMIPrimer() {
           country="London"
           desc="A London-based think tank and research organisation focused on extremism, disinformation, and FIMI. Notable for research on domestic extremism alongside foreign influence operations, and for documenting the Southport riots' social media disinformation dynamics (2024). Has a strong policy-facing orientation and publishes practitioner-accessible reports. Note: ISD has faced some controversy about funding and methodology — worth knowing as a practitioner."
           url="https://www.isdglobal.org"
-          crossover="Change management lens on societal polarisation — intersects with org transformation research on trust and group dynamics"
         />
         <OrgCard
           name="Stanford Internet Observatory (SIO)"
@@ -827,7 +824,6 @@ export default function FIMIPrimer() {
           country="US (New York)"
           desc="A network analysis firm focused on mapping and analysing influence operations. Pioneered the 'network mapping' approach to CIB analysis — visualising the social graph of inauthentic accounts. Key reports include Spamouflage/Dragon Bridge (China), IRA post-2016 analysis, and various national election operations. Has a commercial side alongside research outputs. Frequently cited in platform transparency reports."
           url="https://graphika.com"
-          crossover="Network analysis methodology has applications in org network analysis — adjacent skill set"
         />
 
         <h3 className="text-lg font-bold text-amber-400 mb-5 mt-8" style={{ fontFamily: "'Sixtyfour', Georgia, serif" }}>Private Sector</h3>
@@ -838,7 +834,6 @@ export default function FIMIPrimer() {
           country="US/Global"
           desc="A media ratings and intelligence firm that provides credibility ratings for news and information sites, and increasingly runs systematic tracking of influence operation narratives (including Storm-1516). NewsGuard's Misinformation Fingerprints product tracks specific false narratives across the web. One of the few commercial firms with systematic, longitudinal data on narrative spread. Subscription service — used by governments, platforms, and researchers."
           url="https://www.newsguardtech.com"
-          crossover="SaaS model for information integrity — commercial analogy to public-sector monitoring functions"
         />
         <OrgCard
           name="CASM Technology (Centre for the Analysis of Social Media)"
@@ -846,7 +841,6 @@ export default function FIMIPrimer() {
           country="London"
           desc="A UK-based research and technology firm (spun out of Demos think tank) specialising in computational social science applied to disinformation and online harms. Works with UK government, platforms, and international development bodies on monitoring FIMI and online influence. Strong data science / NLP focus. One of the few organisations at the intersection of FIMI analysis, platform policy, and international development context — relevant given your FCDO background."
           url="https://www.casm.technology"
-          crossover="Works on FCDO-adjacent programmes. Intersection of data science + public policy. Relevant to your background."
         />
         <OrgCard
           name="Recorded Future"
